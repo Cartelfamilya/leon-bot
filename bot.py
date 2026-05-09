@@ -12,7 +12,7 @@ logging.info(f"TELEGRAM_TOKEN: {TELEGRAM_TOKEN[:10] if TELEGRAM_TOKEN else 'YOK'
 logging.info(f"GEMINI_API_KEY: {GEMINI_API_KEY[:10] if GEMINI_API_KEY else 'YOK'}")
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 SYSTEM = "Sen Seat Leon 1M (Mk1) 2003 model araç konusunda uzman bir Türkçe asistansın. Motorlar: 1.4 16v, 1.6 8v/16v, 1.8 20v Turbo, 1.9 TDI, 2.8 VR6. Cevaplarını kısa, net ve pratik tut. Türkçe yaz."
 
